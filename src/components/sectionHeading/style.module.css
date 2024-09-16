@@ -1,0 +1,16 @@
+ .name{ 
+font-family: Poppins;
+font-size: 65px;
+font-weight: 600;
+line-height: 97.5px;
+letter-spacing: 0.03em; 
+color:#000;
+ }
+ .description{
+    font-family: Poppins;
+font-size: 21px;
+font-weight: 400;
+line-height: 31.5px;
+letter-spacing: 0.03em; 
+color:#000; 
+ }

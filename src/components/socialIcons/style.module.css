@@ -1,0 +1,6 @@
+.social_icons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+}

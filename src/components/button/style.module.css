@@ -1,0 +1,94 @@
+.button { 
+  color: #fff; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; 
+  text-decoration: none; 
+  gap: 8px;
+  border: 0.4px solid;
+  border-radius: 12px  ;  
+} 
+/* Variants */ 
+   
+.fill{
+  background: #fd6f00; 
+  border-color: #fd6f00;
+  color:#fff;
+}
+.outline{
+  background: #F8F8F8;
+  border-color: #545454;
+  color: #000;
+} 
+ 
+.x-small{
+  padding: 10px 20px; 
+font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+color:#fff;
+}
+.small {
+  padding: 17px 53px;
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 31.5px;
+  letter-spacing: 0.03em;
+  text-align: justified; 
+}  
+
+.medium { 
+  padding: 18px; 
+font-size: 21px;
+font-weight: 400;
+line-height: 31.5px;
+letter-spacing: 0.03em;
+text-align: justified;
+
+}
+.large {
+  padding: 20px 36px;
+  font-size: 24px;  
+font-weight: 600;
+line-height: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+
+}   
+ 
+/* Display modifiers */
+.block {
+  display: block;
+  width: 100%;
+}
+
+.inline {
+  display: inline-flex;
+}
+
+/* Alignment modifiers */
+.alignleft {
+  text-align: left;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.alignright {
+  text-align: end;
+}
+
+/* Custom styles for the arrow icon */
+.icon {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.button:hover .icon {
+  transform: translateX(4px);
+}
