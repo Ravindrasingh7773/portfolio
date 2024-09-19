@@ -1,5 +1,6 @@
 body{
   font-family: "poppins",sans-serif;
+  /* background-color:#040a36; */
  }
 
 *,::after,::before{
@@ -20,7 +21,7 @@ h1{
   font-family: "poppins",sans-serif;
   font-size: 80px;
   font-weight: 500;
-  line-height: 84px;
+  line-height: 84px;  
   letter-spacing: -3px;
   text-align: left;
   color: #121212;
@@ -91,3 +92,20 @@ img{
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
+
+.progress-bar{
+  background-color:#FD6F00 !important;
+}
+@media (min-width:1400px) {
+  
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1440px;
+  }
+  }
+  
+@media (min-width:1900px) {
+  
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1620px;
+  }
+  }

@@ -1,0 +1,65 @@
+ .test_item {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  background-color: #f8f8f8;
+  padding: 54px 77px 54px 48px;
+  width: 100%;
+  max-width: 1084px;
+}
+.test_image {
+  margin-bottom: 37px;
+  display: flex;
+}
+.test_image img {
+  width: 235px;
+  height: 235px;
+  object-fit: cover;
+  flex: 1;
+}
+.test_title {
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28.5px;
+  letter-spacing: 0.02em;
+  text-align: justified;
+  color: #000000;
+}
+.test_content {
+  width: 700px;
+}
+.test_content q {
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 31.5px;
+  letter-spacing: 0.02em;
+  text-align: justified;
+  color: #424242;
+}
+
+.test_name {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  text-align: justified;
+  margin: 5px 0px;
+}
+@media (max-width: 425px) {
+  .test_item {
+    padding: 54px 48px;
+  }
+  .test_image {
+    margin: auto;
+  }
+  .test_content q {
+    font-size: 17px;
+  }
+  .test_name {
+    font-size: 20px;
+  }
+}

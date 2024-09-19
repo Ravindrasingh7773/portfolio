@@ -1,0 +1,46 @@
+.project_item { 
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  .project_image img{
+      margin-bottom: 37px;
+    height: 490px;
+    object-fit: contain; 
+    transition: all .3s ease-in-out;
+  }
+  .project_title { 
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-align: left; 
+    color: #000000;
+  }
+  .project_content p { 
+font-family: Poppins;
+font-size: 19px;
+font-weight: 400;
+line-height: 28.5px;
+letter-spacing: 0.03em;
+text-align: left; 
+    color: #FD6F00;
+    margin-bottom: 10px;;
+  }
+  
+  .project_image:hover img{
+    transform: scale(1.02);
+  }
+@media (max-width: 572px) {
+  .project_image img {
+    margin-bottom: 0px;
+  }
+  .project_content p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .project_title {
+    font-size: 21px;
+  }
+   
+}

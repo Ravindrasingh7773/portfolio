@@ -1,1 +1,28 @@
+ .logo{
+    display:flex;
+ }
+ .logo a{
+    display:flex;
+ }
+ .logo a img{
+   width:270px;
+ }
  
+.logo a:hover {
+  animation-name: rotateAnimation;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rotateAnimation {
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(90deg); }  /* or 180deg */
+  100% { transform: rotateY(0deg); }  /* or 360deg */
+}
+
+@media (max-width: 572px) {
+    .logo a img{
+      width:180px;
+    }
+}

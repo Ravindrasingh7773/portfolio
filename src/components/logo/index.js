@@ -1,13 +1,17 @@
-import React from "react";
-import styles from "./style.module.css";
-import logoImg from "../../assets/images/logo.png";
+import React from 'react';
+import styles from './style.module.css';
+import { Link } from 'react-router-dom';
+import LogoImg from '../../assets/images/2.png';
 
-const Logo = () => {
-  return (
-    <div className={styles.logo}>
-      <img src={logoImg} alt='logo img' />
-    </div>
-  );
-};
+const Logo = ({ ImgUrl = LogoImg }) => {
+    return (
+        <div className={styles.logo}>
+            <Link to={`/`}>
+                <img src={ImgUrl} alt="Logo" />
+            </Link>
+        </div>
+    )
+
+}
 
 export default Logo;

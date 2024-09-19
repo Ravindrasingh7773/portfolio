@@ -6,8 +6,10 @@
   text-decoration: none; 
   gap: 8px;
   border: 0.4px solid;
-  border-radius: 12px  ;  
+  border-radius: 12px  ; 
+  transition:  all .3s ease-in-out; 
 } 
+
 /* Variants */ 
    
 .fill{
@@ -15,12 +17,24 @@
   border-color: #fd6f00;
   color:#fff;
 }
+
+.fill:hover {
+  background: #e65c00; /* Slightly darker orange on hover */
+  border-color: #e65c00; /* Match border with background */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
 .outline{
   background: #F8F8F8;
   border-color: #545454;
   color: #000;
 } 
- 
+ .outline:hover{
+  
+  background: #fd6f00; 
+  border-color: #fd6f00;
+  color:#fff;
+ }
 .x-small{
   padding: 10px 20px; 
 font-family: Poppins;
