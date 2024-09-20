@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import HsImg from "../../assets/images/my_img.png";
 import abtImg from "../../assets/images/my_image2.png";
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import SocialIcons from "../../components/socialIcons";
 import Button from "../../components/button";
 import SectionHeading from "../../components/sectionHeading";
@@ -50,19 +51,19 @@ const FeatureData = [
     title: "Web Development",
     description:
       "Building scalable web apps with React.js, HTML, and CSS.",
-    icon: Icon4,
+    icon: Icon3,
   },
   {
     title: "UI/UX Implementation",
     description:
       "Turning designs into functional interfaces with HTML, CSS, and JavaScript.",
-    icon: Icon4,
+    icon: Icon2,
   },
   {
     title: "E-commerce",
     description:
       "Developing e-commerce solutions using JavaScript and React.js.",
-    icon: Icon4,
+    icon: Icon1,
   },
   {
     title: "Component Development",
@@ -153,7 +154,7 @@ const Home = () => {
       delay: 300,
       duration: 1000,
       easing: "ease-in-out",
-      once: false,
+      once: true,
     });
     AOS.refresh(); 
   
@@ -216,7 +217,7 @@ const Home = () => {
         </Container>
       </Section>
 
-      <Section pt={"60"}  ref={progressSectionRef} >
+      <Section pt={"80"}  Ref={progressSectionRef} >
         <Container>
           <Row>
             <Col lg={6} >
@@ -232,14 +233,7 @@ const Home = () => {
                     " I create visually appealing, high-performance websites using React. With expertise in responsive design and CSS modules, I deliver seamless user experiences while continuously improving my frontend and backend skills."
                   }
                 />
-                {/* {ProgressData.map((data, i) => {
-                  return (
-                    <div key={i} className={styles.progress_bar}>
-                      <h6 className={styles.progress_label}>{data.label}</h6>
-                      <ProgressBar now={data.percentage} />
-                    </div>
-                  );
-                })} */}
+       
                                 {ProgressData.map((data, i) => (
                   <div key={i} className={styles.progress_bar}>
                     <h6 className={styles.progress_label}>{data.label}</h6>
@@ -255,7 +249,7 @@ const Home = () => {
         </Container>
       </Section>
 
-      <Section pt={"140"} pb={"140"}>
+      <Section pt={"140"} pb={"110"}>
         <Container>
           <Row className="justify-content-center">
             <Col lg={8}   data-aos="fade-up"  >
@@ -271,7 +265,7 @@ const Home = () => {
           </Row>
           <Row className="mt-4">
             {FeatureData.map((data, i) => (
-              <Col lg={3} key={i}  data-aos="fade-up" data-aos-delay={`${i * 1000}`} >
+              <Col lg={3} key={i}  data-aos="fade-up" data-aos-delay={`${i * 300}`} >
                 <FeatureBox
                   title={data.title}
                   des={data.description}
@@ -298,22 +292,32 @@ const Home = () => {
           </Row>
           <Row className="justify-content-center">
             <Col lg={10}>
-              <div className={styles.project_tabs}>
-                {tabData.map((data,i)=>
-                  <Button text={data.title} size={"small"} type={"outline"} key={i} isButton={true} onClick={() => setActiveTab(i)} customCss={`${styles.tabButton} ${
-                    activeTab === i ? styles.activeTab : ""
-                  }`} />
-                )}
-{/*                 
+            <div className={styles.project_tabs}>
+                {tabData.map((data, i) => (
+                  <div
+                    className={`${styles.button} ${activeTab === i ? styles.active_tab : ""}`}
+                    id={styles.button_7}
+                    key={i}
+                    onClick={() => setActiveTab(i)} // Set the active tab when clicked
+                  >
+                    <div id={styles.dub_arrow}>
+                      <img
+                        src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true"
+                        alt="Arrow"
+                      />
+                    </div>
+                    <Link to="/">{data.title}</Link>
+                  </div>
+                ))}
+
+                {/* Example of hard-coded buttons if needed */}
+                {/* 
                 <Button text={"UI /UX"} size={"small"} type={"outline"} />
                 <Button text={"Web Design"} size={"small"} type={"fill"} />
                 <Button text={"App Design"} size={"small"} type={"outline"} />
-                <Button
-                  text={"Graphic Design"}
-                  size={"small"}
-                  type={"outline"}
-                /> */}
-              </div>
+                <Button text={"Graphic Design"} size={"small"} type={"outline"} /> 
+                */}
+              </div> 
             </Col>
           </Row>
           <Row>
